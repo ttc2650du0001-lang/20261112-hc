@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+/* =========================
+   共通設定
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+    background: #f4f7fb;
+    line-height: 1.8;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   ヘッダー
+========================= */
+
+header {
+    padding: 25px 5%;
+    background: #10233f;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+
+nav a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #64c8ed;
+}
+
+/* =========================
+   フッター
+========================= */
+
+footer {
+    padding: 20px;
+    background: #10233f;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* =========================
+   HOME
+========================= */
+
+/* メインビジュアル */
+
+#home .main-visual {
+    position: relative;
+    text-align: center;
+    background: #10233f;
+}
+
+#home .main-visual img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+#home .main-visual h2 {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+#home .main-visual p {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    width: 90%;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* コンテンツ */
+
+#home .contents {
+    margin-top: 40px;
+    padding: 35px;
+    background: #fff;
+    border-top: 4px solid #287fc1;
+}
+
+#home .contents h2 {
+    color: #174a82;
+    font-size: 28px;
+    border-bottom: 2px solid #dce8f2;
+    padding-bottom: 10px;
+}
+
+#home .contents h3 {
+    margin-top: 30px;
+    color: #287fc1;
+    border-left: 4px solid #36b5d2;
+    padding-left: 12px;
+}
+
+#home .contents p {
+    color: #666;
+}
+
+/* MOREボタン */
+
+#home .contents>a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #174a82;
+    color: #fff;
+    font-size: 13px;
+}
+
+#home .contents>a:hover {
+    background: #287fc1;
+}
+
+/* =========================
+   下層ページ共通
+========================= */
+
+.lower {
+    background: #f4f7fb;
+}
+
+/* ページ見出し */
+
+.lower .page-heading {
+    padding: 35px;
+    background: #174a82;
+    color: #fff;
+}
+
+.lower .page-heading h2 {
+    margin-top: 0;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.lower .page-heading p {
+    margin-bottom: 0;
+    color: #dceeff;
+}
+
+/* 2カラムレイアウト */
+
+.lower .layout {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.lower article {
+    flex: 1;
+}
+
+.lower article section {
+    margin-bottom: 25px;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #e0e8f0;
+}
+
+.lower article h2 {
+    color: #174a82;
+    font-size: 23px;
+    border-bottom: 2px solid #dce8f2;
+    padding-bottom: 10px;
+}
+
+.lower article h3 {
+    margin-top: 25px;
+    color: #287fc1;
+}
+
+.lower article p {
+    color: #666;
+}
+
+.lower article section:last-child {
+    margin-bottom: 0;
+}
+
+/* サイドバー */
+
+.lower aside {
+    width: 200px;
+    padding: 25px;
+    background: #e5edf6;
+    border-top: 4px solid #287fc1;
+}
+
+.lower aside h2 {
+    margin-top: 0;
+    color: #174a82;
+    font-size: 20px;
+}
+
+.lower aside ul {
+    padding-left: 20px;
+}
+
+.lower aside li {
+    margin-bottom: 15px;
+}
+
+.lower aside a {
+    color: #287fc1;
+    font-size: 14px;
+}
+
+.lower aside a:hover {
+    color: #10233f;
+}
+
+/* =========================
+   PAGE 01・PAGE 02
+========================= */
+
+#page01 .page-heading h2,
+#page02 .page-heading h2 {
+    color: #64c8ed;
+}
+
+/* =========================
+   スマートフォン対応
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav a {
+        margin-right: 12px;
+        font-size: 12px;
+    }
+
+    main {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    #home .main-visual img {
+        height: 250px;
+    }
+
+    #home .main-visual h2 {
+        top: 28%;
+        font-size: 28px;
+    }
+
+    #home .main-visual p {
+        top: 53%;
+        font-size: 11px;
+    }
+
+    #home .contents {
+        padding: 25px 20px;
+    }
+
+    .lower .page-heading {
+        padding: 25px;
+    }
+
+    .lower .page-heading h2 {
+        font-size: 26px;
+    }
+
+    .lower .layout {
+        display: block;
+    }
+
+    .lower aside {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .lower article section {
+        padding: 22px;
+    }
+}
